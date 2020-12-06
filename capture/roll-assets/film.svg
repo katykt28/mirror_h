@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="195" height="177" viewBox="0 0 195 177">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+    <image id="image" width="196" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAAAUCAYAAADSmJJEAAAAT0lEQVRoge3TgQmAQADEsNP9d1YQ5DtEMkKh17ZnwOeWAQ5DQBgCwhAQhoAwBIQhIAwBYQgIQ0AYAsIQEIaAMASEISAMAWEICENAGAJ+214ecgEnDIPpCgAAAABJRU5ErkJggg=="/>
+  </defs>
+  <g id="film.svg">
+    <image id="flim" x="-2" width="200" height="177" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACxCAYAAACBdfKXAAACaElEQVR4nO3dQU7DMBRAwQRxkt7/TL1KUcWKun2K5EapwswSWBU/GWPJf12W5bY8uN2GLz21ruumn4MjzaznL785eE0gEAQCQSAQnh7SgV92EAgCgSAQCAKBIBAIAoEgEAgCgSAQCAKBIBAIAoEgEAgCgSAQCAKB8P34LS+acCaz69kOAkEgEAQCQSAQhkP6rK2HItjDu/95ZAeBIBAIAoEgEAjDId0NOWcyu57tIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCYXi8+nK5bPq8rterz5WPN7ue709f/5mZNjtX2gg2jvS4Ls1Jhx0JBIJAIAgEgkAgCASCQCAIBMJwk+6GnDOZXc/DTfosN+kc6d1z/v2JBUEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJhGH8wO1caPok56bAjgUAQCASBQBAIBIFAEAgEgUAQCIThJt0NOWcyu57tIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQBAJBIBAEAkEgEAQCQSAQzEnn1MxJhx0JBIJAIAgEwnBIn+XwzpnYQSAIBIJAIAgEwv1Eve2qEf4hOwgEgUAQCASBQBAIBIFAEAgEgUAQCASBQBAIBIFAEAgEgUAQCASBQBAIBIFAEAgEr7tzal53hx0JBIJAIAgEXlmW5QdfoD6wD/GzUQAAAABJRU5ErkJggg=="/>
+    <use id="長方形_1" data-name="長方形 1" x="-1" y="-2" xlink:href="#image"/>
+    <use id="長方形_1-2" data-name="長方形 1" x="-1" y="158" xlink:href="#image"/>
+    <rect id="長方形_2" data-name="長方形 2" class="cls-1" x="2" y="-5" width="10" height="10"/>
+    <path id="長方形_2-2" data-name="長方形 2" class="cls-2" d="M297,184.458h10v10H297v-10Z" transform="translate(-295 -13)"/>
+    <path id="長方形_2-3" data-name="長方形 2" class="cls-2" d="M477.436,7.851h10v10h-10v-10Z" transform="translate(-295 -13)"/>
+    <path id="長方形_2-4" data-name="長方形 2" class="cls-2" d="M477.438,184.9h10v10h-10v-10Z" transform="translate(-295 -13)"/>
+  </g>
+</svg>
