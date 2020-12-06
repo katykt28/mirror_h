@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/effect_style.css">
+</head>
+
+<!--<body onContextmenu="window.alert('ごめんなさい。著作物を多数表示するサイトのため右クリックは禁止です');return false" oncopy="return false;">-->
+
+<body>
+    <div id="wrapper">
+        <div id="effect">
+            <img src="images/top/curtain1.jpg" id="curtain1">
+            <img src="images/top/curtain2.jpg" id="curtain2">
+        </div>
+        <main>
+            <div class="left-container">
+                <figure class="top_roll">
+                    <img src="images/top/roll.svg" alt="">
+                </figure>
+                <ul class="film">
+                    <li>
+                        <figure><img src="images/top/demo.jpg" alt=""></figure>
+                    </li>
+                    <li>
+                        <figure><img src="images/top/demo.jpg" alt=""></figure>
+                    </li>
+                    <li>
+                        <figure><img src="images/top/demo.jpg" alt=""></figure>
+                    </li>
+                    <li>
+                        <figure><img src="images/top/demo.jpg" alt=""></figure>
+                    </li>
+                    <li>
+                        <figure><img src="images/top/demo.jpg" alt=""></figure>
+                    </li>
+                    <li>
+                        <figure><img src="images/top/demo.jpg" alt=""></figure>
+                    </li>
+                    <li>
+                        <figure><img src="images/top/demo.jpg" alt=""></figure>
+                    </li>
+                    <li>
+                        <figure><img src="images/top/demo.jpg" alt=""></figure>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-container">
+                <article class="container">
+                    <div class="youtube-area">
+                        <div id="youtube"></div>
+                    </div>
+                </article>
+                <nav class="drawer-menu">
+                    <h1>スタジオミラーハウス<span>STUIDIO MIRROR HOUSE</span></h1>
+                    <ul>
+                        <li>About Us</li>
+                        <li>アニメーションスタイル</li>
+                        <li>LifeHack</li>
+                        <li>感パース</li>
+                        <li>ブログ</li>
+                        <li>問合せ
+                        </li>
+                        <li>メンバーログイン</li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/curtain.js"></script>
+    <script type="text/javascript">
+        function open_curtain() {
+            $("#curtain1").animate({
+                width: 20
+            }, 1000);
+            $("#curtain2").animate({
+                width: 20
+            }, 1000);
+        }
+
+        function close_curtain() {
+            $("#curtain1").animate({
+                width: '50%'
+            }, 1000);
+            $("#curtain2").animate({
+                width: '50%'
+            }, 1000);
+        }
+        $(window).on('load', function () {
+            open_curtain();
+        });
+        $(document).ready(function () {
+            close_curtain();
+        });
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // YouTubeの埋め込み
+        function onYouTubeIframeAPIReady() {
+            ytPlayer = new YT.Player(
+                'youtube', {
+                    videoId: 'UCJxNTXX6k4', // YouTubeのvideoIdを入れる
+                    playerVars: {
+                        loop: 1, // ループしない
+                        controls: 1, // コントローラー表示
+                        autoplay: 1, // 自動再生オフ
+                        rel: 0, // オススメ動画を表示させない
+                        showinfo: 1 // タイトル表示
+                    },
+                    events: {
+                        'onReady': onPlayerReady
+                    }
+                }
+            );
+        }
+
+        function onPlayerReady(event) {
+            event.target.setVolume(0);
+        }
+    </script>
+</body>
+
+</html>
