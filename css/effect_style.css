@@ -250,9 +250,17 @@ main .right-container {
   }
 }
 
+main .right-container article {
+  text-align: right;
+  padding-right: 40px;
+  margin-right: 0;
+}
+
 @media (max-width: 991.98px) {
   main .right-container article {
     position: absolute;
+    text-align: center;
+    padding-right: 0;
   }
 }
 
