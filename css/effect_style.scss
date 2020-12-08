@@ -109,10 +109,12 @@ body {
 .film {
     list-style: none;
     width: clamp(115px,27vw,333px);
-    position: absolute;
     z-index: 1;
     -webkit-animation: 10s linear infinite slider;
-            animation: 10s linear infinite slider;
+    animation: 10s linear infinite slider;
+    @media (max-width: 991.98px) {
+        padding-left: 2rem;
+    }
 
     li {
         width: clamp(115px,27vw,333px);
@@ -151,11 +153,16 @@ body {
 article{
     padding-top: 4rem;
     z-index: 1000;
+    @media (max-width: 991.98px) {
+        padding-top: 7rem;
+    }
     #youtube{
         width: 58vw;
         max-width: 50rem;
+        min-width: 17rem;
         height: 40vw;
         max-height: 35rem;
+        min-height: 15rem;
         margin: 0 auto;
         // width: clamp(800px,58vw,888px);
         // height: clamp(450px,40vw,600px);
@@ -197,5 +204,21 @@ main {
     }
     .right-container {
         flex: 0 0 70%;
+        @media (max-width: 991.98px) {
+            position: relative;
+        }
+        @media (max-width: 449.98px) {
+            flex: 0 0 90%;
+        }
+        article {
+            @media (max-width: 991.98px) {
+                    position: absolute;
+            }
+            @media (max-width: 449.98px) {
+                left: -6.6rem;
+
+            }
+        }
+
     }
 }

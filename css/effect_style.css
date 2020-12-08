@@ -116,10 +116,15 @@ body {
 .film {
   list-style: none;
   width: clamp(115px, 27vw, 333px);
-  position: absolute;
   z-index: 1;
   -webkit-animation: 10s linear infinite slider;
   animation: 10s linear infinite slider;
+}
+
+@media (max-width: 991.98px) {
+  .film {
+    padding-left: 2rem;
+  }
 }
 
 .film li {
@@ -166,11 +171,19 @@ article {
   z-index: 1000;
 }
 
+@media (max-width: 991.98px) {
+  article {
+    padding-top: 7rem;
+  }
+}
+
 article #youtube {
   width: 58vw;
   max-width: 50rem;
+  min-width: 17rem;
   height: 40vw;
   max-height: 35rem;
+  min-height: 15rem;
   margin: 0 auto;
 }
 
@@ -221,5 +234,31 @@ main .right-container {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 70%;
           flex: 0 0 70%;
+}
+
+@media (max-width: 991.98px) {
+  main .right-container {
+    position: relative;
+  }
+}
+
+@media (max-width: 449.98px) {
+  main .right-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  main .right-container article {
+    position: absolute;
+  }
+}
+
+@media (max-width: 449.98px) {
+  main .right-container article {
+    left: -6.6rem;
+  }
 }
 /*# sourceMappingURL=effect_style.css.map */
