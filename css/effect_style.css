@@ -177,6 +177,12 @@ article {
   }
 }
 
+@media (max-width: 449.98px) {
+  article {
+    padding-top: 4rem;
+  }
+}
+
 article #youtube {
   width: 58vw;
   max-width: 50rem;
