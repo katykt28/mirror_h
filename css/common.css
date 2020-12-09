@@ -213,7 +213,7 @@
         margin-left: auto;
         margin-right: 1.2rem;
         opacity: 0;
-        animation: fadeIn 3s linear;
+        animation: fadeIn 4s linear;
         animation-fill-mode: both;
     }
     @keyframes fadeIn{
