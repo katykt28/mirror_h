@@ -19,7 +19,7 @@
             <img src="images/top/curtain1.jpg" id="curtain1">
             <img src="images/top/curtain2.jpg" id="curtain2">
         </div>
-        <label class="menu-btn" for="checked">
+        <label class="menu-btn" for="checked" id="menu-btn">
             <span class="bar top text-center"></span>
             <span class="bar middle"></span>
             <span class="bar bottom"></span>
@@ -135,7 +135,6 @@
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
         // YouTubeの埋め込み
         function onYouTubeIframeAPIReady() {
             ytPlayer = new YT.Player(
@@ -159,6 +158,7 @@
             event.target.setVolume(0);
         }
     </script>
+    <script type="text/javascript" src="js/menu-btn.js"></script>
 </body>
 
 </html>
